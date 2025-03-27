@@ -37,6 +37,8 @@
           Plagas
           </router-link>
 
+          
+
           <router-link
           to="/foro"
           class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
@@ -45,6 +47,21 @@
           Foro
         </router-link>
 
+        <router-link
+          to="/calendario-riego"
+          class="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
+          :class="{ 'text-green-600': $route.path === '/calendario-riego' }"
+        >
+          Riego y Fertilización
+        </router-link>
+
+        <router-link
+          to="/marketplace"
+          class="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
+          :class="{ 'text-green-600': $route.path === '/calendario-riego' }"
+        >
+          Marketplace
+        </router-link>
           </div>
         </div>
 

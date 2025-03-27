@@ -5,9 +5,11 @@ import UserRegister from '../components/UserRegister.vue'
 import CropsView from '../views/CropsView.vue'
 import CropDetailView from '../views/CropDetailView.vue'
 import CropForm from '../views/CropForm.vue'
-import ReportarPlagas from '../views/ReportarPlagas.vue';
-import ForumView from "@/views/ForumView.vue";
-import ProfileView from "@/views/ProfileView.vue";
+import ReportarPlagas from '../views/ReportarPlagas.vue'
+import ForumView from "@/views/ForumView.vue"
+import ProfileView from "@/views/ProfileView.vue"
+import CalendarView from '../views/CalendarView.vue'
+import Marketplace from '../views/Marketplace.vue'
 
 
 const router = createRouter({
@@ -69,7 +71,19 @@ const router = createRouter({
       name: 'Profile',
       component: () => import('@/views/ProfileView.vue'),
       meta: { requiresAuth: true }
-    }
+    },
+    {
+       path: '/calendario-riego',
+       name: 'Calendario-riego',
+       component: CalendarView,
+       meta: { requiresAuth: true } 
+    },
+    {
+      path: '/marketplace',
+      name: 'marketplace',
+      component: Marketplace,
+      meta: { requiresAuth: true } 
+   }
   ]
 })
 
