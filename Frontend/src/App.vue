@@ -1,13 +1,12 @@
 <template>
   <!-- Navbar -->
-  <nav class="bg-white shadow-lg">
+  <nav class="bg-orange-100 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo y Título -->
         <div class="flex items-center">
           <router-link to="/" class="flex items-center">
-            <img class="h-10 w-10" src="@/assets/logo.svg" alt="AgroSync Logo" />
-            <span class="ml-2 text-2xl font-bold text-green-600">AgroSync</span>
+            <span class="ml-2 text-2xl font-bold text-orange-600">NutriSync 🍏</span>
           </router-link>
         </div>
 
@@ -26,7 +25,7 @@
               class="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
               :class="{ 'text-green-600': $route.path.includes('/crops') }"
             >
-              Mis Cultivos
+            Mis Planes de Alimentación
             </router-link>
 
             <router-link
@@ -34,16 +33,8 @@
             class="text-gray-600 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium"
             :class="{ 'text-red-600': $route.path === '/reportar-plagas' }"
           >
-          Plagas
+         Seguimiento
           </router-link>
-
-          <router-link
-          to="/foro"
-          class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
-          :class="{ 'text-blue-600': $route.path === '/foro' }"
-        >
-          Foro
-        </router-link>
 
           </div>
         </div>
